@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+        image: image-registry.openshift-image-registry.svc:5000/openshift/httpd-24
         ports:
         - containerPort: 8080
 

@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 0
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: image-registry.openshift-image-registry.svc:5000/openshift/httpd-24
+        image: httpd-24
         ports:
         - containerPort: 8080
 

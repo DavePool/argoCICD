@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 2
+  replicas: 0
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: gcr.io/google_containers/nginx:latest
+        image: quay.io/redhattraining/httpd-parent
         ports:
         - containerPort: 8080
 

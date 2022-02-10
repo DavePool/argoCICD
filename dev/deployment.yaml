@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: gcr.io/google_containers/nginx-slim:0.8
+        image: gcr.io/google_containers/nginx:latest
         ports:
         - containerPort: 8080
 

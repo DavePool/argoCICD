@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: image-registry.openshift-image-registry.svc:5000/openshift/httpd:latest
+        image: gcr.io/google_containers/nginx-slim:0.8
         ports:
         - containerPort: 8080
 
